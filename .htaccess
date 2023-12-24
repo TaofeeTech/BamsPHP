@@ -1,0 +1,12 @@
+RewriteEngine on
+RewriteRule ^$ template/ [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ template/$1 [L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RewriteRule ^registration template/registration.php [NC,L]
+RewriteRule ^login template/login.php [NC,L]
+RewriteRule ^logout template/logout.php [NC,L]
+RewriteRule ^dashboard template/dashboard.php [NC,L]
+RewriteRule ^accounts template/accounts.php [NC,L]
