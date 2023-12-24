@@ -26,7 +26,7 @@ if (isset($_POST["submit"])) {
             </script>
         ";
 
-        header("Location: index.php");
+        header("Location: index");
 
     } else {
 
